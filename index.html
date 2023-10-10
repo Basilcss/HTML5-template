@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/basilcss@latest/basil.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="row m-1 big:vh-100">
+      <div class="col-8 big:col-4 big:flex-col-justifyCenter-alignCenter">
+        <h1 class="m-b-1">Lorem, ipsum dolor.</h1>
+        <p class="big:w-60">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam
+          maiores ipsam, unde exercitationem error. Culpa quisquam dolorem ad,
+          sunt cupiditate praesentium laudantium eum aspernatur distinctio ullam
+          recusandae officia, reprehenderit, sequi et commodi earum ea nesciunt.
+        </p>
+      </div>
+      <div class="col-8 big:col-4 big:flex-col-justifyCenter-alignCenter">
+        <img
+          class="full-width big:w-60"
+          id="randomImage"
+          src="https://picsum.photos/500/500"
+          alt="Random Image"
+        />
+      </div>
+    </section>
+  </body>
+  <script>
+    function loadRandomImage() {
+      const randomImage = document.getElementById("randomImage")
+      randomImage.src = `https://picsum.photos/200/300?random=${Math.random()}`
+    }
+  </script>
+</html>
